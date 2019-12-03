@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next src",
     "build": "next build src",
-    "start": "next start src",
+    "start": "next start src -p $PORT",
     "heroku-postbuild": "yarn build",
     "export": "next export src",
     "deploy": "yarn build && yarn export"
