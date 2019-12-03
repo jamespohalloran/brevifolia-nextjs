@@ -9,6 +9,7 @@
     "dev": "next src",
     "build": "next build src",
     "start": "next start src",
+    "heroku-postbuild": "yarn build",
     "export": "next export src",
     "deploy": "yarn build && yarn export"
   },
