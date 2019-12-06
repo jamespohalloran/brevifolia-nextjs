@@ -1,13 +1,17 @@
-import matter from 'gray-matter'
+import matter from "gray-matter";
 
 import Layout from "../components/Layout";
 import BlogList from "../components/BlogList";
 
-const Index = (props) => {
+const Index = props => {
   return (
-    <Layout pathname="/" siteTitle={props.title} siteDescription={props.description}>
+    <Layout
+      pathname="/"
+      siteTitle={props.title}
+      siteDescription={props.description}
+    >
       <section>
-        <BlogList allBlogs={props.allBlogs}/>
+        <BlogList allBlogs={props.allBlogs} />
       </section>
     </Layout>
   );
@@ -16,9 +20,9 @@ const Index = (props) => {
 export default Index;
 
 Index.getInitialProps = async function() {
-  const siteConfig = await import(`../data/config.json`)
-   //get posts & context from folder
-   const posts = (context => {
+  const siteConfig = await import(`../data/config.json`);
+  //get posts & context from folder
+  const posts = (context => {
     const keys = context.keys();
     const values = keys.map(context);
     const data = keys.map((key, index) => {
@@ -41,6 +45,6 @@ Index.getInitialProps = async function() {
 
   return {
     allBlogs: posts,
-    ...siteConfig,
-  }
-}
+    ...siteConfig
+  };
+};

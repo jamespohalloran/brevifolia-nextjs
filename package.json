@@ -7,9 +7,8 @@
   "author": "@kendallstraut",
   "scripts": {
     "dev": "next src",
-    "develop": "concurrently \"yarn dev\" \"tina-git-server 3001\"",
     "build": "next build src",
-    "start": "concurrently \"next start src -p $PORT\" \"tina-git-server 3001\"",
+    "start": "REQUIRE_AUTH=true node server.js",
     "heroku-postbuild": "yarn build",
     "export": "next export src",
     "deploy": "yarn build && yarn export"
@@ -29,7 +28,10 @@
     "react-tinacms": "^0.9.2",
     "styled-components": "^4.4.1",
     "tinacms": "^0.10.0",
-    "webpack": "^4.37.0"
+    "webpack": "^4.37.0",
+    "@tinacms/teams": "0.1.1-alpha.0",
+    "cors": "2.8.5",
+    "cookie-parser": "1.4.4"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
