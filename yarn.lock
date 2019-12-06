@@ -1021,10 +1021,10 @@
   resolved "https://registry.yarnpkg.com/@tinacms/styles/-/styles-0.1.0.tgz#f928d678001a3f44987dfec28d00f7e3c6e67003"
   integrity sha512-w2QWKKfQaovxdRqH0IxytoA6orlU66FnoTjqwYxPYV06llKZBISUOquOK8GyywMN6kpKlMdAKxennk5DFII5Ww==
 
-"@tinacms/teams@0.1.1-alpha.0":
-  version "0.1.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@tinacms/teams/-/teams-0.1.1-alpha.0.tgz#bfd5eff787047d6ddfbf80f6e33a5e5680098c40"
-  integrity sha512-G/An1kv0dLiHiZmtcvl+3sXnJh7Lg+TyJbjvZtLKcL/Ul+ezsGzkFmCZW4rZ+p5M6sHLR+QgNbmD9h/7257tkg==
+"@tinacms/teams@0.1.1-alpha.1":
+  version "0.1.1-alpha.1"
+  resolved "https://registry.yarnpkg.com/@tinacms/teams/-/teams-0.1.1-alpha.1.tgz#81f1ca5d873a03bfe111c096abad1c743bb382ef"
+  integrity sha512-2mjX3fdNhS1vpr9NfCvXsaeVqzH0Y6y3g5Ux+faeWhn+nGwlzOslNAVkhLSotMZoUHBO5WYX14y5vaWICMyu7w==
   dependencies:
     express "^4.17.1"
     jsonwebtoken "8.5.1"
