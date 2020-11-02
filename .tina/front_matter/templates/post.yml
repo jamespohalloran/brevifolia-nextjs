@@ -8,6 +8,25 @@ fields:
     config:
       required: false
     label: Title
+  - name: author
+    type: text
+    label: author
+    config:
+      required: false
+  - name: hero_image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  - name: date
+    label: Date
+    type: datetime
+    hidden: false
+    default: "2001-02-02T00:00:00.000Z"
+    config:
+      date_format: YYYY/MM/DD
+      export_format: YYYY-MM-DD
+      required: true
 pages:
   - src/posts/coastal-redwood.md
   - src/posts/doug-fir.md

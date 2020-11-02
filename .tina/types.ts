@@ -113,6 +113,9 @@ export type MutationAddPendingDocumentArgs = {
 
 export type Post_InputData = {
   title?: Maybe<Scalars['String']>;
+  author?: Maybe<Scalars['String']>;
+  hero_image?: Maybe<Scalars['String']>;
+  date?: Maybe<Scalars['String']>;
 };
 
 export type Post_Input = {
@@ -131,7 +134,21 @@ export type TextField = {
   component?: Maybe<Scalars['String']>;
 };
 
-export type Post_FormFields = TextField;
+export type FileField = {
+  __typename?: 'FileField';
+  name?: Maybe<Scalars['String']>;
+  label?: Maybe<Scalars['String']>;
+  component?: Maybe<Scalars['String']>;
+};
+
+export type DatetimeField = {
+  __typename?: 'DatetimeField';
+  name?: Maybe<Scalars['String']>;
+  label?: Maybe<Scalars['String']>;
+  component?: Maybe<Scalars['String']>;
+};
+
+export type Post_FormFields = TextField | FileField | DatetimeField;
 
 export type Post_Form = {
   __typename?: 'Post_Form';
@@ -143,11 +160,17 @@ export type Post_Form = {
 export type Post_Data = {
   __typename?: 'Post_Data';
   title?: Maybe<Scalars['String']>;
+  author?: Maybe<Scalars['String']>;
+  hero_image?: Maybe<Scalars['String']>;
+  date?: Maybe<Scalars['String']>;
 };
 
 export type Post_InitialValues = {
   __typename?: 'Post_InitialValues';
   title?: Maybe<Scalars['String']>;
+  author?: Maybe<Scalars['String']>;
+  hero_image?: Maybe<Scalars['String']>;
+  date?: Maybe<Scalars['String']>;
 };
 
 export type Post = {
