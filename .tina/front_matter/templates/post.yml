@@ -1,0 +1,15 @@
+---
+label: Post
+hide_body: false
+display_field: title
+fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+pages:
+  - src/posts/coastal-redwood.md
+  - src/posts/doug-fir.md
+  - src/posts/rocky-mountain-juniper.md
+  - src/posts/the-oldest-living-organism-on-the-planet.md
