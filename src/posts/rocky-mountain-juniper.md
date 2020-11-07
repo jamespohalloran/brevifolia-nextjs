@@ -1,5 +1,5 @@
 ---
-title: The most incredible juniper
+title: The most incredible juniper!
 author: Father John Misty
 date: "2019-07-08T16:05:29.000+00:00"
 hero_image: ../static/usa-1.jpg
